@@ -1,13 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .header {
   position: fixed;
   z-index: 997;
-  height: 80px;
+  height: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 50px;
+  transition: background-color 0.3s, height 0.3s;
+}
 .navbar {
   padding: 0;
 }
@@ -30,18 +39,17 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
-  color: #080808;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 12px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 200;
   letter-spacing: 1px;
 }
 .navbar a,
 .navbar a:focus {
-  font-size: 18px;
+  font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
@@ -49,6 +57,7 @@
 .navbar a:hover {
   color: #ffb727;
 }
+
 @media (max-width: 415px) {
   .navbar a {
     padding: 5px;
@@ -76,6 +85,16 @@
   margin-bottom: 80px;
 }
 
+#home:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .home-container {
   position: relative;
   display: flex;
@@ -98,4 +117,74 @@
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+/*----------------------------------------------------------------*/
+.section-header {
+  text-align: center;
+  text-shadow: 0 0 3px #ff0000;
+  font-size: xxx-large;
+}
+.about-container {
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  width: 100%;
+}
+.kajalImg {
+  max-width: 200px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#about-text {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: fit-content;
+  margin-top: 30px;
+  padding: 1em;
+}
+/*----------------------------------------------------------------*/
+.section-class {
+  position: relative;
+  margin: auto;
+  max-width: 80%;
+}
+
+.workEx-item-button {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.workEx-item-button::after {
+  content: "\25BC"; /* Unicode for downward arrow */
+  float: right;
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\25B2"; /* Unicode for upward arrow */
+}
+.workExperiences-container {
+  padding: 1em;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.content ul {
+  list-style-type: square;
+}
+.workEx-item {
+  padding-bottom: 20px;
 }
