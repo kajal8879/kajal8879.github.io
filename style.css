@@ -1,3 +1,20 @@
+:root {
+  --white: #ffffff;
+  --section-depth-color: #ecedee;
+  --section-title-color: #303438;
+  --navbar-background-color: rgba(0, 0, 0, 0.588);
+  --navbar-highlight: #ffb727;
+  --background: rgba(0, 0, 0, 0.65);
+  --pestle-blue: rgb(215, 230, 250);
+  --gray: #777;
+  --black: #000;
+  --facebook-background: #3b5998;
+  --linkedIn-background: #007bb5;
+  --box-shadow: rgba(214, 215, 216, 0.6);
+  --red: #ff0000;
+  --green: #00ff00;
+  --dark-green: #087508;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,11 +23,11 @@ body {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-family: "Satisfy", serif;
-  color: white;
+  color: var(--white);
 }
 
 .home-container h2 {
-  color: white;
+  color: var(--white);
   margin-bottom: 50px;
   font-size: 13px;
   font-weight: 500;
@@ -38,7 +55,7 @@ body {
 .section-title span {
   position: absolute;
   top: 50px;
-  color: #eef0f2;
+  color: var(--section-depth-color);
   left: 0;
   right: 0;
   z-index: 1;
@@ -53,12 +70,12 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #3b434a;
+  color: var(--section-title-color);
   position: relative;
   z-index: 2;
 }
 .scrolled {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: var(--navbar-background-color);
   height: 50px;
   transition: background-color 0.3s, height 0.3s;
 }
@@ -84,7 +101,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
-  color: white;
+  color: var(--white);
   white-space: nowrap;
   transition: 0.3s;
   font-family: "Raleway", sans-serif;
@@ -101,7 +118,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #ffb727;
+  color: var(--navbar-highlight);
 }
 
 @media (max-width: 415px) {
@@ -133,7 +150,7 @@ body {
 
 #home:before {
   content: "";
-  background: rgba(0, 0, 0, 0.65);
+  background: var(--background);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -153,11 +170,11 @@ body {
   margin: 0 0 10px 0;
   font-size: 70px;
   font-family: "Satisfy", serif;
-  color: #fff;
+  color: var(--white);
 }
 
 .home h2 {
-  color: #eee;
+  color: var(--white);
   margin-bottom: 50px;
   font-size: 13px;
   font-weight: 500;
@@ -181,7 +198,7 @@ body {
   border-radius: 10px;
 }
 #about-text {
-  background-color: antiquewhite;
+  background-color: var(--pestle-blue);
   border-radius: 10px;
   box-sizing: border-box;
   height: fit-content;
@@ -196,8 +213,8 @@ body {
 }
 
 .workEx-item-button {
-  background-color: #777;
-  color: white;
+  background-color: var(--section-title-color);
+  color: var(--white);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -222,7 +239,7 @@ body {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: var(--pestle-blue);
 }
 .content ul {
   list-style-type: square;
@@ -235,7 +252,7 @@ body {
   padding: 1em;
 }
 .project-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 var(--section-title-color);
   max-width: 300px;
   margin: auto;
   text-align: center;
@@ -244,8 +261,8 @@ body {
 .project-card a {
   width: 83%;
   font-size: 18px;
-  background-color: #000;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
@@ -256,7 +273,7 @@ body {
   opacity: 0.7;
 }
 .subject {
-  color: grey;
+  color: var(--gray);
   font-size: 22px;
 }
 
@@ -278,7 +295,7 @@ body {
 }
 .socialContact-container h3 {
   font-size: 20px;
-  color: #777777;
+  color: var(--gray);
   font-weight: 700;
   margin: 10px 0;
   text-align: center;
@@ -301,17 +318,17 @@ body {
 }
 
 .fa-facebook-f {
-  background-color: #3b5998;
-  color: white;
+  background-color: var(--facebook-background);
+  color: var(--white);
 }
 
 .fa-linkedin-in {
-  background: #007bb5;
-  color: white;
+  background: var(--linkedIn-background);
+  color: var(--white);
 }
 .fa-instagram {
-  background: #125688;
-  color: white;
+  background: var(--facebook-background);
+  color: var(--white);
 }
 .email-call-container {
   display: flex;
@@ -323,24 +340,30 @@ body {
   flex: 0 0 auto;
   width: 45%;
 }
+.emailMe p {
+  color: var(--section-title-color);
+}
 .callMe {
   flex: 0 0 auto;
   width: 45%;
 }
+.callMe p {
+  color: var(--section-title-color);
+}
 .social-contact-fmt {
-  color: #444444;
+  color: var(--gray);
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 30px var(--box-shadow);
   padding: 40px 0 40px 0;
   margin-bottom: 10px;
 }
 
 .email-icon {
-  color: #ff0000; /* Customize the color for the email icon */
+  color: var(--red); /* Customize the color for the email icon */
 }
 
 .phone-icon {
-  color: #00ff00; /* Customize the color for the phone/call icon */
+  color: var(--green); /* Customize the color for the phone/call icon */
 }
 .contact-form-container {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
@@ -361,8 +384,8 @@ body {
 }
 .submit-button {
   width: 100%;
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--dark-green);
+  color: var(--white);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -376,11 +399,11 @@ body {
 }
 
 .footer {
-  background-color: #f9f9f9;
+  background-color: var(--section-depth-color);
   padding: 20px 0;
   text-align: center;
   font-size: 14px;
-  color: black;
+  color: var(--black);
 }
 
 .footer p {
