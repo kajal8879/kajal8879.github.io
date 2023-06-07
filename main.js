@@ -55,3 +55,18 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+function handleSubmit(event) {
+  event.preventDefault();
+
+  // Accessing form inputs
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  // Printing inputs to console
+  console.group("Contact Form Data");
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Message:", message);
+  console.groupEnd();
+}

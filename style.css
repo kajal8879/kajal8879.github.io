@@ -2,6 +2,21 @@ body {
   margin: 0;
   padding: 0;
 }
+.home-container h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-family: "Satisfy", serif;
+  color: #fff;
+}
+
+.home-container h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 .header {
   position: fixed;
   z-index: 997;
@@ -11,7 +26,37 @@ body {
   justify-content: center;
   align-items: center;
 }
+.section-class {
+  page-break-after: always;
+}
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
 
+.section-title span {
+  position: absolute;
+  top: 50px;
+  color: #eef0f2;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #3b434a;
+  position: relative;
+  z-index: 2;
+}
 .scrolled {
   background-color: rgba(0, 0, 0, 0.65);
   height: 50px;
@@ -46,6 +91,7 @@ body {
   text-transform: uppercase;
   font-weight: 200;
   letter-spacing: 1px;
+  border-bottom: none;
 }
 .navbar a,
 .navbar a:focus {
@@ -101,11 +147,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 100px 15px;
+  padding: 150px 15px;
 }
 .home h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 70px;
   font-family: "Satisfy", serif;
   color: #fff;
 }
@@ -187,4 +233,141 @@ body {
 }
 .workEx-item {
   padding-bottom: 20px;
+}
+/*----------------------------------------------------------------*/
+.projects-container {
+  padding: 1em;
+}
+.project-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.project-card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.project-card button:hover {
+  opacity: 0.7;
+}
+.subject {
+  color: grey;
+  font-size: 22px;
+}
+
+/*------------------------------------------------------------------*/
+.contactMe {
+  display: flex;
+}
+.socialContact-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+  width: 50%;
+  margin: 10px;
+  justify-content: space-between;
+}
+.social-profiles {
+  flex: 0 0 auto;
+  width: 100%;
+}
+.socialContact-container h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+  text-align: center;
+}
+.social-profiles-icons a {
+  margin: 10px;
+}
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 5px 2px;
+}
+
+.fab:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook-f {
+  background-color: #3b5998;
+  color: white;
+}
+
+.fa-linkedin-in {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.email-call-container {
+  margin: 50px;
+  display: flex;
+}
+.emailMe {
+  flex: 0 0 auto;
+  width: 45%;
+}
+.callMe {
+  flex: 0 0 auto;
+  width: 45%;
+}
+.social-contact-fmt {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  margin-top: 10px;
+}
+
+.email-icon {
+  color: #ff0000; /* Customize the color for the email icon */
+}
+
+.phone-icon {
+  color: #00ff00; /* Customize the color for the phone/call icon */
+}
+.contact-form-container {
+  flex: 0 0 auto;
+  width: 50%;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  margin: 20px;
+}
+.form-control {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.submit-button {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
