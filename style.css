@@ -165,11 +165,7 @@ body {
   text-transform: uppercase;
 }
 /*----------------------------------------------------------------*/
-.section-header {
-  text-align: center;
-  text-shadow: 0 0 3px #ff0000;
-  font-size: xxx-large;
-}
+
 .about-container {
   margin: auto;
   padding-left: 1em;
@@ -374,4 +370,9 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+.contact-form-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }

@@ -202,11 +202,11 @@
           <div class="project-card">
             <img
               src="/images/Project-based-Make-A-Simple-Asteroids-Clone-with-Pygame_Watermarked.e9868ba4436d.avif"
-              alt="Asteroid Shooting Image"
+              alt="Image to represnt Asteroid collision game using pygame"
               style="width: 100%"
             />
             <h1>Shooting Asteroids</h1>
-            <p class="subject">Software Engineering</p>
+            <h2 class="subject">Software Engineering</h2>
             <p>
               Hit-get is a game, a player can produce bullets, shoots the
               obstacles which are target for player that are generated on the
@@ -222,11 +222,11 @@
           <div class="project-card">
             <img
               src="/images/trimet-train.webp"
-              alt="Trimet Project Image"
+              alt="Image to represent Trimet Project"
               style="width: 100%"
             />
             <h1>Trimet Train</h1>
-            <p class="subject">Data Engineering</p>
+            <h2 class="subject">Data Engineering</h2>
             <p>
               In this project we built a automated pipeline which consumes real
               world data from Trimet organization and after going through all
@@ -245,11 +245,11 @@
           <div class="project-card">
             <img
               src="/images/KrabbyDo.svg"
-              alt="Krabby Do project Image"
+              alt="Image to represent KrabbyDo project in Rust Language"
               style="width: 100%"
             />
             <h1>Krabby Do</h1>
-            <p class="subject">Programming in Rust</p>
+            <h2 class="subject">Programming in Rust</h2>
             <p>
               Krabby Do is a notification desktop application which will send
               notification based on reminders you have added. This project gave
@@ -276,21 +276,42 @@
             <div class="social-profiles social-contact-fmt">
               <h3>Social Profiles</h3>
               <div class="social-profiles-icons">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-linkedin-in"></a>
-                <a href="#" class="fab fa-instagram"></a>
+                <a
+                  href="https://www.facebook.com/kajal.patil.982"
+                  target="_blank"
+                  class="fab fa-facebook-f"
+                  aria-label="Link to facebook"
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/kajalpatil595/"
+                  target="_blank"
+                  class="fab fa-linkedin-in"
+                  aria-label="Link to linkedIn"
+                ></a>
+                <a
+                  href="https://www.instagram.com/kajal__patil/"
+                  target="_blank"
+                  class="fab fa-instagram"
+                  aria-label="Link to instagram"
+                ></a>
               </div>
             </div>
             <div class="email-call-container">
               <div class="emailMe social-contact-fmt">
-                <a href="mailto:kajalpatil8879@gmail.com" class="email-icon"
+                <a
+                  href="mailto:kajalpatil8879@gmail.com"
+                  class="email-icon"
+                  aria-label="Email Id details"
                   ><i class="fa fa-envelope"></i
                 ></a>
                 <h3>Email Me</h3>
                 <p>kajal@pdx.edu</p>
               </div>
               <div class="callMe social-contact-fmt">
-                <a href="tel:+19717061660" class="phone-icon"
+                <a
+                  href="tel:+19717061660"
+                  class="phone-icon"
+                  aria-label="Mobile Phone details"
                   ><i class="fa fa-phone"></i
                 ></a>
                 <h3>Call Me</h3>
@@ -300,6 +321,7 @@
           </div>
           <div class="contact-form-container">
             <form onsubmit="handleSubmit(event)">
+              <label for="name">Your Name:</label>
               <input
                 type="text"
                 name="name"
@@ -308,7 +330,9 @@
                 placeholder="Your Name"
                 required=""
               />
+
               <br />
+              <label for="email">Your Email:</label>
               <input
                 type="email"
                 class="form-control"
@@ -317,7 +341,9 @@
                 placeholder="Your Email"
                 required=""
               />
+
               <br />
+              <label for="message">Message:</label>
               <textarea
                 id="message"
                 class="form-control"
@@ -326,6 +352,7 @@
                 placeholder="Message"
                 required=""
               ></textarea>
+
               <br />
               <button type="submit" class="submit-button">Send Message</button>
             </form>
