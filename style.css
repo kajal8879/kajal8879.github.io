@@ -6,11 +6,11 @@ body {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-family: "Satisfy", serif;
-  color: #fff;
+  color: white;
 }
 
 .home-container h2 {
-  color: #eee;
+  color: white;
   margin-bottom: 50px;
   font-size: 13px;
   font-weight: 500;
@@ -91,7 +91,7 @@ body {
   text-transform: uppercase;
   font-weight: 200;
   letter-spacing: 1px;
-  border-bottom: none;
+  text-decoration: none;
 }
 .navbar a,
 .navbar a:focus {
@@ -245,16 +245,15 @@ body {
   text-align: center;
   font-family: arial;
 }
-.project-card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+.project-card a {
+  width: 83%;
   font-size: 18px;
+  background-color: #000;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .project-card button:hover {
@@ -268,14 +267,16 @@ body {
 /*------------------------------------------------------------------*/
 .contactMe {
   display: flex;
+  flex-wrap: wrap;
 }
 .socialContact-container {
   display: flex;
   flex-wrap: wrap;
-  flex: 0 0 auto;
-  width: 50%;
-  margin: 10px;
   justify-content: space-between;
+  min-width: 300px;
+  margin: auto;
+  margin-bottom: 15px;
+  flex: 0 0 45%;
 }
 .social-profiles {
   flex: 0 0 auto;
@@ -319,8 +320,10 @@ body {
   color: white;
 }
 .email-call-container {
-  margin: 50px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 .emailMe {
   flex: 0 0 auto;
@@ -346,11 +349,12 @@ body {
   color: #00ff00; /* Customize the color for the phone/call icon */
 }
 .contact-form-container {
-  flex: 0 0 auto;
-  width: 50%;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
-  margin: 20px;
+  min-width: 300px;
+  margin: auto;
+  margin-bottom: 15px;
+  flex: 0 0 45%;
 }
 .form-control {
   width: 100%;
