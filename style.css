@@ -268,6 +268,9 @@ body {
   text-decoration: none;
   display: inline-block;
 }
+.project-card ul li {
+  text-align: left;
+}
 
 .project-card button:hover {
   opacity: 0.7;
